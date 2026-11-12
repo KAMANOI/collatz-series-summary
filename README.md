@@ -8,6 +8,18 @@ Comprehensive summary of the research program establishing four components: exac
 
 ---
 
+## Erratum (2026-11-12)
+
+- **Theorem SR and the "one-shot" part of Theorem Monotonicity are withdrawn.** Consecutive jumps of the same height occur (1643 -> 2465 -> 1849 -> 1387 -> 2081, a_t = 1, 5, 3, 1, 5), and a height K >= 4 can be reached more than once in one orbit (139: height 4 at 139 -> 209 and again at 11 -> 17). Height records are increasing only by definition.
+- Source of the error: the cascade law q -> 3q was applied to the jump step. After a height-K jump the odd core is (3q + 1) / 2^K (see the erratum of Paper H).
+- The contrast drawn in Section 3 between "one-shot" record renewals in actual orbits and revisited levels in the Haar model is therefore not established.
+- Theorems UPI, MC, PC and PG rest on the same transport step; their proofs are not public and they should be treated as unverified.
+- Unaffected: the mixing results of Papers A-E, Theorems VD and OC (inside a cascade), JE, JE2, the Hensel nesting, and part (a) of Theorem HMC.
+
+The PDF in `paper/` is the original, uncorrected version.
+
+---
+
 ## Overview
 
 The summary organises the complete series into two layers and four components, and states the single open problem that remains after all proved results are accounted for.
@@ -31,7 +43,7 @@ The summary organises the complete series into two layers and four components, a
 | Theorem TMix: P_K mixes in exactly K−1 steps | A–E | ✓ proved |
 | Exact covariance Cov_π(k₀, kₙ) = 2·(1/2)^N | A | ✓ proved |
 | Total mutual information Σ I_π = 2 log 2 | A | ✓ proved |
-| Theorem Monotonicity: height records strictly increasing | F–M | ✓ proved |
+| Theorem Monotonicity: height records strictly increasing | F–M | true by definition only; "each height once" is false, see Erratum |
 | Theorem HMC: 2-adic convergence to −3⁻¹ | N–O | ✓ proved |
 | Paper P (Negative): mixing alone insufficient | P | ✓ proved |
 
